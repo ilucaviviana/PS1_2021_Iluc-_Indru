@@ -16,7 +16,7 @@ void timer()
   OCR1A = 15625;
 }
 
-ISR(ADC_vect)
+ISR(ADC_vect)  //temperatura
 {
    lcd.setCursor(0,0);
    numar_CAN = ADC;
